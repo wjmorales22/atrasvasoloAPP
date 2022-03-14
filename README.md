@@ -1,11 +1,11 @@
 # SISTEMA DE TRANSPORTE
 
-A proyecto
+Proyecto de sistema de transporte público desarrollado por estudiantes de la Universidad de El Salvador.
+Para ser empleado con énfasis en la Ciudad de Santa Ana. Los mapas se muestran con ArcGis
 
 ## Install the dependencies
-```bash
-yarn
-# or
+Primero debe asegurarse de tener instalada la version de NodeJS 12.22.1 puede emplear nvm para administrar versiones de nodejs
+```
 npm install
 ```
 
@@ -14,18 +14,5 @@ npm install
 npx quasar dev
 ```
 
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
+### Desarrollado por estudiantes de Diseño de Sistemas 1
+Universidad de El Salvador. Facultad Multidisciplinaria de Occidente. 2022
