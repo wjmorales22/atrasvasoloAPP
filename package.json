@@ -1,9 +1,9 @@
 {
-  "name": "quasar-project",
-  "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
-  "author": "Ernesto Alexander Calderon Peraza <calderonperaza@gmail.com>",
+  "name": "atrasvasoloapp",
+  "version": "1.0.0",
+  "description": "Sistema de Transporte",
+  "productName": "Atras va Solo APP",
+  "author": "",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
