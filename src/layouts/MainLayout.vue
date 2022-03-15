@@ -3,8 +3,8 @@
     <q-layout view="lHh Lpr lff">
       <q-header elevated class="bg-cyan-8">
         <q-toolbar>
-          <q-toolbar-title>Header</q-toolbar-title>
-          <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
+          <q-toolbar-title>Atras Va Solo App</q-toolbar-title>
+          <q-btn flat @click = 'drawer = !drawer' round dense icon="menu" />
         </q-toolbar>
       </q-header>
 
@@ -18,41 +18,41 @@
           <q-list padding>
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="inbox" />
+                <q-icon name="home" />
               </q-item-section>
 
               <q-item-section>
-                Inbox
+                Home
               </q-item-section>
             </q-item>
 
             <q-item active clickable v-ripple>
               <q-item-section avatar>
+                <q-icon name="person_pin_circle" />
+              </q-item-section>
+
+              <q-item-section>
+                Mis recorridos
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
                 <q-icon name="star" />
               </q-item-section>
 
               <q-item-section>
-                Star
+                Favoritos
               </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="send" />
+                <q-icon name="directions_bus" />
               </q-item-section>
 
               <q-item-section>
-                Send
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="drafts" />
-              </q-item-section>
-
-              <q-item-section>
-                Drafts
+                Mis rutas
               </q-item-section>
             </q-item>
           </q-list>
@@ -77,12 +77,11 @@
 </template>
 
 <script>
-import ref from 'vue'
 
 export default {
-  setup () {
+  data () {
     return {
-      drawer: ref(false)
+      drawer: false
     }
   }
 }
