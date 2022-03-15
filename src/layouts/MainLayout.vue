@@ -45,12 +45,11 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Home',
     icon: 'home',
     link: 'https://quasar.dev'
   },
   {
-    icon: 'las la-street-view',
+    icon: 'person_pin_circle',
     link: 'https://github.com/quasarframework'
   },
   {
