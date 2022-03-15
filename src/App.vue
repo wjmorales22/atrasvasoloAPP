@@ -1,8 +1,8 @@
-<template>
-  <div id="q-app">
-    <router-view />
-  </div>
-</template>
+  <template>
+    <div >
+      <router-view/>
+    </div>
+ </template>
 
 <script>
 export default {
