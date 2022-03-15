@@ -16,8 +16,8 @@
       >
         <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
           <q-list padding>
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
+            <q-item clickable v-ripple to="/">
+              <q-item-section avatar >
                 <q-icon name="home" />
               </q-item-section>
 
@@ -26,33 +26,33 @@
               </q-item-section>
             </q-item>
 
-            <q-item active clickable v-ripple>
+            <q-item clickable v-ripple to="/destinos">
+              <q-item-section avatar >
+                <q-icon name="explore" />
+              </q-item-section>
+
+              <q-item-section >
+                Destinos
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple to="/paradas">
               <q-item-section avatar>
                 <q-icon name="person_pin_circle" />
               </q-item-section>
 
               <q-item-section>
-                Mis recorridos
+                Paradas
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple>
-              <q-item-section avatar>
-                <q-icon name="star" />
-              </q-item-section>
-
-              <q-item-section>
-                Favoritos
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/rutas">
               <q-item-section avatar>
                 <q-icon name="directions_bus" />
               </q-item-section>
 
               <q-item-section>
-                Mis rutas
+                Rutas
               </q-item-section>
             </q-item>
           </q-list>
@@ -63,8 +63,8 @@
             <q-avatar size="56px" class="q-mb-sm">
               <img src="https://cdn.quasar.dev/img/boy-avatar.png">
             </q-avatar>
-            <div class="text-weight-bold">Razvan Stoenescu</div>
-            <div>@rstoenescu</div>
+            <div class="text-weight-bold">Administrator</div>
+            <div>@administrator</div>
           </div>
         </q-img>
       </q-drawer>
