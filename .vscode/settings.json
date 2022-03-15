@@ -7,6 +7,6 @@
     "typescript",
     "vue"
   ],
-  "vetur.experimental.templateInterpolationService": true,
+  "vetur.experimental.templateInterpolationService": false,
   "terminal.integrated.allowChords": false
 }
