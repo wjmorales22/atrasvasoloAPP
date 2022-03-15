@@ -46,7 +46,7 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksData = [
   {
     icon: 'home',
-    link: 'https://quasar.dev'
+    link: ''
   },
   {
     icon: 'person_pin_circle',
