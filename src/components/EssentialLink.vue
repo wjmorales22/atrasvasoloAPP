@@ -2,7 +2,6 @@
   <q-item
     clickable
     tag="a"
-    target="_blank"
     :href="link"
   >
     <q-item-section
@@ -22,6 +21,7 @@
 </template>
 
 <script>
+
 export default {
   name: '',
   props: {

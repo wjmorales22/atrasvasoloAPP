@@ -45,8 +45,10 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
+    title: 'Rutas',
+    caption: 'Rutas',
     icon: 'home',
-    link: ''
+    link: 'rutas'
   },
   {
     icon: 'person_pin_circle',

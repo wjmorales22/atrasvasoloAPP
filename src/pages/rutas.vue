@@ -1,3 +1,3 @@
 <template>
-<h1>Hola mundo</h1>
+<h4>Rutas</h4>
 </template>
