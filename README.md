@@ -11,8 +11,10 @@ npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
+quasar dev
 npx quasar dev
 ```
+
 
 ### Desarrollado por estudiantes de Diseño de Sistemas 1
 Universidad de El Salvador. Facultad Multidisciplinaria de Occidente. 2022
