@@ -31,3 +31,8 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+#generando estadisticas de autores de codigo con gitinspector
+#npm i -g gitinspector
+#gitinspector --format=html > gitinspector.html
+gitinspector.html
