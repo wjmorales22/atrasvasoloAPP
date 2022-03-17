@@ -83,6 +83,14 @@
 
               <q-item-section> Rutas </q-item-section>
             </q-item>
+            <br><br>
+            <q-item clickable v-ripple href="https://diseno2022.github.io/atrasvasoloAPP/">
+              <q-item-section avatar>
+                <q-icon name="language" />
+              </q-item-section>
+
+              <q-item-section> Sitio </q-item-section>
+            </q-item>
           </q-list>
         </q-scroll-area>
 
