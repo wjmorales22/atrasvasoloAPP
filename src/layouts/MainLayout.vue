@@ -64,18 +64,24 @@
               <q-item-section avatar>
                 <q-icon name="explore" />
               </q-item-section>
+
+              <q-item-section> Destinos </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple to="/paradas">
               <q-item-section avatar>
                 <q-icon name="fas fa-street-view" />
               </q-item-section>
+
+              <q-item-section> Paradas </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple to="/rutas">
               <q-item-section avatar>
                 <q-icon name="directions_bus" />
               </q-item-section>
+
+              <q-item-section> Rutas </q-item-section>
             </q-item>
           </q-list>
         </q-scroll-area>
