@@ -64,24 +64,18 @@
               <q-item-section avatar>
                 <q-icon name="explore" />
               </q-item-section>
-
-              <q-item-section> Destinos </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple to="/paradas">
               <q-item-section avatar>
                 <q-icon name="fas fa-street-view" />
               </q-item-section>
-
-              <q-item-section> Paradas </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple to="/rutas">
               <q-item-section avatar>
                 <q-icon name="directions_bus" />
               </q-item-section>
-
-              <q-item-section> Rutas </q-item-section>
             </q-item>
           </q-list>
         </q-scroll-area>
@@ -104,14 +98,6 @@
       <q-page-container>
         <router-view></router-view>
       </q-page-container>
-       <q-footer elevated class="bg-grey-8 text-white">
-      <q-tabs align="left">
-        <q-route-tab to="/page1" label="Destinos">
-        </q-route-tab>
-        <q-route-tab to="/page2" label="Paradas" />
-        <q-route-tab to="/page3" label="Rutas" />
-      </q-tabs>
-    </q-footer>
     </q-layout>
   </div>
 </template>
