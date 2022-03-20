@@ -3,7 +3,7 @@
     <q-layout view="lHh Lpr lff">
       <div class="col-12 col-md-auto" style="border: solid">
         <div class="row justify-between">
-          <q-parallax style="" src="https://fondosmil.com/fondo/22205.png"> </q-parallax>
+          <q-parallax style="" src="https://i.ibb.co/hDhDtLp/Dise-o-sin-t-tulo-36.png"> </q-parallax>
         </div>
       </div>
       <div class="col-12 col-md-auto" style="padding-top: 10px">
