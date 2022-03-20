@@ -29,7 +29,7 @@
             style="padding-top: 5px"
             class="example-item"
           >
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/detalleparada">
               <q-item-section avatar>
                 <q-icon name="directions_bus" color="black" />
               </q-item-section>
