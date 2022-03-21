@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row ">
     <q-parallax>
       <template v-slot:media>
         <q-carousel
@@ -40,16 +40,16 @@
             right: 0,
           }"
         >
+
           <q-input
-            bg-color="grey-1"
-            filled
-            color="light-green"
-            standout
-            bottom-slots
-            v-model="text"
-            label="Cual es tu destino?"
-            counter
-            clearable
+              rounded
+              standout="bg-pink-6 text-white"
+              bottom-slots
+              v-model="text"
+              label="¿Cuál es tu proximo Destino?"
+              bg-color="grey-1"
+              color="light-green"
+              style="width: 90%"
           >
             <template v-slot:prepend>
               <q-icon name="place" />
@@ -57,10 +57,15 @@
             <template v-slot:append>
               <q-icon name="search" />
             </template>
+
           </q-input>
         </div>
       </template>
     </q-parallax>
+
+    <div class="q-mt-md">
+      <span class="text-weight-bolder text-h6 ">Elige tu destino favorito</span>
+    </div>
   </div>
 </template>
 
@@ -75,4 +80,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.fondo{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+</style>

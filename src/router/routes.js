@@ -7,7 +7,9 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') },
       { path: 'destinos', name: 'destinos', component: () => import('pages/destinos.vue') },
       { path: 'rutas', name: 'rutas', component: () => import('pages/rutas.vue') },
-      { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') }
+      { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') },
+      { path: 'detalleparada', name: 'detalleparada', component: () => import('pages/detalleParada.vue') },
+      { path: 'detalleruta', name: 'detalleruta', component: () => import('pages/detalleRuta.vue') }
     ]
 
   },
