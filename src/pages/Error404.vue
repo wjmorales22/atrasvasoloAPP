@@ -1184,7 +1184,9 @@
       <br>
       El enlace que siguió puede estar roto o ya no existe.
       <br>
-      Vuelva a intentarlo o intente mas tarde</p>
+      Vuelva a intentarlo ahora o intente mas tarde
+      <br>
+      Pulsa sobre la imagen para regresar al inicio</p>
   </div>
 </template>
 
@@ -1225,7 +1227,7 @@ export default {
 
 .message__text {
   font-family: 'Montserrat', sans-serif;
-  line-height: 42px;
+  line-height: 35px;
   font-size: 18px;
   padding: 0 60px;
   max-width: 680px;
