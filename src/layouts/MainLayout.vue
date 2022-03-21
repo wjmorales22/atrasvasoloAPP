@@ -52,7 +52,7 @@
           "
         >
           <q-list >
-            <q-item clickable v-ripple to="/layout">
+            <q-item clickable v-ripple to="/">
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
