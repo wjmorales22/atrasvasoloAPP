@@ -12,8 +12,8 @@
       row-key="name"
       selection="single"
       :selected.sync="selected"
-      no-data-label="Rutas no disponibles"
       :pagination="pagination"
+      no-data-label="Rutas no disponibles"
     >
     </q-table>
     </q-layout>
