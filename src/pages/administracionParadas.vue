@@ -1,13 +1,13 @@
 <template>
   <q-page class="row d-flex justify-center">
     <q-list class="col-12 col-sm-10 col-md-8 col-lg-6">
-      <elemento-lista v-for="(parada, index) in paradas" :key="index" :parada="parada" />
+      <elementoLista v-for="(parada, index) in paradas" :key="index" :parada="parada" />
     </q-list>
   </q-page>
 </template>
 
 <script>
-import elementoLista from '../components/administracion paradas/elementoLista.vue'
+import elementoLista from '../components/administracionParadas/elementoLista.vue'
 
 export default {
   name: 'administracionParadas',
