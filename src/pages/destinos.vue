@@ -48,7 +48,6 @@
               v-model="text"
               label="¿Cuál es tu proximo Destino?"
               bg-color="grey-1"
-              color="light-green"
               style="width: 90%"
           >
             <template v-slot:prepend>
@@ -63,8 +62,19 @@
       </template>
     </q-parallax>
 
-    <div class="q-mt-md">
-      <span class="text-weight-bolder text-h6 ">Elige tu destino favorito</span>
+    <div class="q-mt-md full-width">
+      <span class="text-weight-bolder text-h6 ">Elige tu destino favorito!</span>
+        <q-intersection v-for="index in 1" :key="index" transition="flip-right"  class="q-pt-sm col-12">
+            <q-item clickable v-ripple to="/">
+              <q-item-section avatar>
+                <q-icon color="dark" name="cottage" />
+              </q-item-section>
+              <q-item-section class="text-subtitle1 text-weight-bolder text-dark">CASA</q-item-section>
+              <q-item-section avatar>
+                <q-icon color="dark" name="arrow_forward_ios" />
+              </q-item-section>
+            </q-item>
+        </q-intersection>
     </div>
   </div>
 </template>
