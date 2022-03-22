@@ -30,13 +30,6 @@
         </q-toolbar>
       </q-header>
 
-      <q-footer bordered>
-        <q-tabs align="center" class="q-pa-md">
-        <q-route-tab to="/destinos" label="Destinos" icon="explore"/>
-        <q-route-tab to="/paradas" label="Paradas" icon="directions_bus"/>
-        <q-route-tab to="/rutas" label="Rutas" icon="insights"/>
-      </q-tabs>
-      </q-footer>
       <q-drawer
         v-model="drawer"
         show-if-above
@@ -70,7 +63,7 @@
               <q-item-section>Rutas </q-item-section>
             </q-item>
             <q-separator />
-            <q-item clickable v-ripple to="/layout/administracion-paradas">
+            <q-item clickable v-ripple>
               <q-item-section avatar>
                 <q-icon name="ion-cog" />
               </q-item-section>
