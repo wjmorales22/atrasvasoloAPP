@@ -1,5 +1,8 @@
 <template>
-  <q-item style="margin-bottom: 1rem;">
+  <q-item
+    clickable
+    style="margin-bottom: 1rem;"
+  >
     <q-item-section avatar>
       <q-icon name="directions_bus" color="black" size="34px" />
     </q-item-section>
@@ -15,7 +18,7 @@
 
       <q-item-label
         lines="1"
-        class="text-body2 text-weight-bold text-primary text-uppercase"
+        class="text-caption text-weight-bold text-primary text-uppercase"
         style="padding-top: 0.75rem;"
       >
         <span class="cursor-pointer">Ver en el mapa</span>
