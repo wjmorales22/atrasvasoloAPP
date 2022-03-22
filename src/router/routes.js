@@ -9,21 +9,18 @@ const routes = [
       { path: 'rutas', name: 'rutas', component: () => import('pages/rutas.vue') },
       { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') },
       { path: 'detalleparada', name: 'detalleparada', component: () => import('pages/detalleParada.vue') },
-      { path: 'detalleruta', name: 'detalleruta', component: () => import('pages/detalleRuta.vue') },
-      { path: 'administracion-paradas', name: 'administracion-paradas', component: () => import('pages/administracionParadas.vue') },
-      { path: 'administrar-usuario', name: 'administrar-usuario', component: () => import('pages/administrarUsuario.vue') }
+      { path: 'detalleruta', name: 'detalleruta', component: () => import('pages/detalleRuta.vue') }
     ]
 
   },
 
   {
-    path: '/layout',
-    component: () => import('layouts/Layout.vue'),
+    path: '/admin',
+    component: () => import('layouts/AdminLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
-      { path: 'destinos', name: 'destinos', component: () => import('pages/destinos.vue') },
-      { path: 'rutas', name: 'rutas', component: () => import('pages/rutas.vue') },
-      { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') }
+      { path: 'administrar-paradas', name: 'dministrar-paradas', component: () => import('pages/administrarParadas.vue') },
+      { path: 'administrar-rutas', name: 'dministrar-ruta', component: () => import('pages/administrarRutas.vue') },
+      { path: 'administrar-usuarios', name: 'dministrar-usuarios', component: () => import('pages/administrarUsuarios.vue') }
     ]
   },
   // Always leave this as last one,
