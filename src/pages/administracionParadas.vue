@@ -1,6 +1,6 @@
 <template>
   <q-page class="row d-flex justify-center">
-    <q-list class="col-12 col-sm-10 col-md-8">
+    <q-list class="col-12">
       <div
         class="flex justify-between"
         style="margin-bottom: 2rem;"

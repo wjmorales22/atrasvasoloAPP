@@ -1,10 +1,10 @@
 <template>
   <q-item
     clickable
-    style="margin-bottom: 1rem;"
+    style="padding: 1rem;"
   >
     <q-item-section avatar>
-      <q-icon name="directions_bus" color="black" size="34px" />
+      <q-icon name="fas fa-street-view" color="primary" size="34px" />
     </q-item-section>
 
     <q-item-section top>
