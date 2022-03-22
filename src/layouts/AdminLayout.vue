@@ -45,50 +45,78 @@
           "
         >
           <q-list padding>
-            <q-item clickable v-ripple to="/">
+            <q-item
+              clickable
+              v-ripple to="/admin/"
+            >
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
 
-              <q-item-section> Home </q-item-section>
+              <q-item-section>Home</q-item-section>
             </q-item>
-            <q-separator />
-            <br>
-            <q-item-label header>Administración</q-item-label>
-            <q-item clickable v-ripple to="/admin/rutas">
+
+            <q-item-label
+              header
+              style="margin-top: 1.5rem;"
+            >
+              Administración
+            </q-item-label>
+
+            <q-item
+              clickable
+              v-ripple
+              to="/admin/administrar-rutas"
+            >
               <q-item-section avatar>
-                <q-icon name="ion-cog" />
+                <q-icon name="directions_bus" />
               </q-item-section>
 
-              <q-item-section>Rutas </q-item-section>
+              <q-item-section>Rutas</q-item-section>
             </q-item>
-            <q-separator />
-            <q-item clickable v-ripple>
+
+            <q-item
+              clickable
+              v-ripple
+              to="administrar-paradas"
+            >
               <q-item-section avatar>
-                <q-icon name="ion-cog" />
+                <q-icon name="place" />
               </q-item-section>
 
-              <q-item-section>Paradas </q-item-section>
+              <q-item-section>Paradas</q-item-section>
             </q-item>
-            <q-separator />
-            <q-item clickable v-ripple>
+
+            <q-item
+              clickable
+              v-ripple
+              to="administrar-usuarios"
+            >
               <q-item-section avatar>
-                <q-icon name="ion-cog" />
+                <q-icon name="people" />
               </q-item-section>
 
-              <q-item-section>General</q-item-section>
+              <q-item-section>Usuarios</q-item-section>
             </q-item>
-            <q-separator />
-            <br><br>
-            <q-item-label header>Sobre nosotros</q-item-label>
-            <q-item clickable v-ripple href="https://diseno2022.github.io/atrasvasoloAPP/">
+
+            <q-item-label
+              header
+              style="margin-top: 1.5rem;"
+            >
+              Sobre nosotros
+            </q-item-label>
+
+            <q-item
+              clickable
+              v-ripple
+              href="https://diseno2022.github.io/atrasvasoloAPP/"
+            >
               <q-item-section avatar>
-                <q-icon name="language" />
+                <q-icon name="public" />
               </q-item-section>
 
-              <q-item-section> Sitio </q-item-section>
+              <q-item-section>Sitio web</q-item-section>
             </q-item>
-            <q-separator />
           </q-list>
         </q-scroll-area>
 
@@ -101,7 +129,9 @@
             <q-avatar size="56px" class="q-mb-sm">
               <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
             </q-avatar>
+
             <div class="text-weight-bold">Administrator</div>
+
             <div>@administrator</div>
           </div>
         </q-img>
@@ -116,11 +146,9 @@
 
 <script>
 export default {
-  data () {
-    return {
-      drawer: false,
-      text: ''
-    }
-  }
+  data: () => ({
+    drawer: false,
+    text: ''
+  })
 }
 </script>

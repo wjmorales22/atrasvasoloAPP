@@ -32,10 +32,10 @@
 
       <q-footer bordered>
         <q-tabs align="center" class="q-pa-md">
-        <q-route-tab to="/destinos" label="Destinos" icon="explore"/>
-        <q-route-tab to="/paradas" label="Paradas" icon="directions_bus"/>
-        <q-route-tab to="/rutas" label="Rutas" icon="insights"/>
-      </q-tabs>
+          <q-route-tab to="/destinos" label="Destinos" icon="explore" />
+          <q-route-tab to="/paradas" label="Paradas" icon="directions_bus" />
+          <q-route-tab to="/rutas" label="Rutas" icon="insights" />
+        </q-tabs>
       </q-footer>
       <q-drawer
         v-model="drawer"
@@ -51,7 +51,7 @@
             border-right: 1px solid #ddd;
           "
         >
-          <q-list >
+          <q-list>
             <q-item clickable v-ripple to="/">
               <q-item-section avatar>
                 <q-icon name="home" />
@@ -59,7 +59,7 @@
 
               <q-item-section> Home </q-item-section>
             </q-item>
-            <br><br><br><br><br><br>
+            <br /><br /><br /><br /><br /><br />
             <q-item clickable v-ripple to="/destinos">
               <q-item-section avatar>
                 <q-icon name="explore" />
@@ -67,7 +67,7 @@
 
               <q-item-section> Destinos </q-item-section>
             </q-item>
-            <br>
+            <br />
             <q-item clickable v-ripple to="/paradas">
               <q-item-section avatar>
                 <q-icon name="fas fa-street-view" />
@@ -75,7 +75,7 @@
 
               <q-item-section> Paradas </q-item-section>
             </q-item>
-            <br>
+            <br />
             <q-item clickable v-ripple to="/rutas">
               <q-item-section avatar>
                 <q-icon name="directions_bus" />
@@ -83,16 +83,20 @@
 
               <q-item-section> Rutas </q-item-section>
             </q-item>
-            <br>
-            <q-item clickable v-ripple href="https://diseno2022.github.io/atrasvasoloAPP/">
+            <br />
+            <q-item
+              clickable
+              v-ripple
+              href="https://diseno2022.github.io/atrasvasoloAPP/"
+            >
               <q-item-section avatar>
                 <q-icon name="language" />
               </q-item-section>
 
               <q-item-section> Sitio </q-item-section>
             </q-item>
-            <br><br><br><br><br><br>
-            <q-item clickable v-ripple to="/layout">
+            <br /><br /><br /><br /><br /><br />
+            <q-item clickable v-ripple to="/admin">
               <q-item-section avatar>
                 <q-icon name="person" />
               </q-item-section>
@@ -112,11 +116,9 @@
 
 <script>
 export default {
-  data () {
-    return {
-      drawer: false,
-      text: ''
-    }
-  }
+  data: () => ({
+    drawer: false,
+    text: ''
+  })
 }
 </script>

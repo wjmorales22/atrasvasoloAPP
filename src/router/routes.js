@@ -18,6 +18,7 @@ const routes = [
     path: '/admin',
     component: () => import('layouts/AdminLayout.vue'),
     children: [
+      { path: '/', name: 'Home', component: () => import('pages/Index.vue') },
       { path: 'administrar-paradas', name: 'dministrar-paradas', component: () => import('pages/administrarParadas.vue') },
       { path: 'administrar-rutas', name: 'dministrar-ruta', component: () => import('pages/administrarRutas.vue') },
       { path: 'administrar-usuarios', name: 'dministrar-usuarios', component: () => import('pages/administrarUsuarios.vue') }
