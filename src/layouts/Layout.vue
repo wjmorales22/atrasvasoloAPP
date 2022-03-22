@@ -52,14 +52,14 @@
           "
         >
           <q-list padding>
-            <q-item clickable v-ripple to="/layout">
+            <q-item clickable v-ripple to="/">
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
 
               <q-item-section> Home </q-item-section>
             </q-item>
-
+            <q-separator />
             <q-item clickable v-ripple to="/destinos">
               <q-item-section avatar>
                 <q-icon name="explore" />
@@ -67,7 +67,7 @@
 
               <q-item-section> Destinos </q-item-section>
             </q-item>
-
+            <q-separator />
             <q-item clickable v-ripple to="/paradas">
               <q-item-section avatar>
                 <q-icon name="fas fa-street-view" />
@@ -75,7 +75,7 @@
 
               <q-item-section> Paradas </q-item-section>
             </q-item>
-
+            <q-separator />
             <q-item clickable v-ripple to="/rutas">
               <q-item-section avatar>
                 <q-icon name="directions_bus" />
@@ -83,7 +83,35 @@
 
               <q-item-section> Rutas </q-item-section>
             </q-item>
+            <q-separator />
+            <br>
+            <q-item-label header>Administración</q-item-label>
+            <q-item clickable v-ripple to="/admin/rutas">
+              <q-item-section avatar>
+                <q-icon name="ion-cog" />
+              </q-item-section>
+
+              <q-item-section>Rutas </q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon name="ion-cog" />
+              </q-item-section>
+
+              <q-item-section>Paradas </q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon name="ion-cog" />
+              </q-item-section>
+
+              <q-item-section>General</q-item-section>
+            </q-item>
+            <q-separator />
             <br><br>
+            <q-item-label header>Sobre nosotros</q-item-label>
             <q-item clickable v-ripple href="https://diseno2022.github.io/atrasvasoloAPP/">
               <q-item-section avatar>
                 <q-icon name="language" />
@@ -91,6 +119,7 @@
 
               <q-item-section> Sitio </q-item-section>
             </q-item>
+            <q-separator />
           </q-list>
         </q-scroll-area>
 
