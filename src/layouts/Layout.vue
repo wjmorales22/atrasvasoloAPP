@@ -94,7 +94,7 @@
               <q-item-section>Rutas </q-item-section>
             </q-item>
             <q-separator />
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/layout/administracion-paradas">
               <q-item-section avatar>
                 <q-icon name="ion-cog" />
               </q-item-section>

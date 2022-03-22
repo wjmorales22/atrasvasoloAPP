@@ -10,7 +10,6 @@ const routes = [
       { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') },
       { path: 'detalleparada', name: 'detalleparada', component: () => import('pages/detalleParada.vue') },
       { path: 'detalleruta', name: 'detalleruta', component: () => import('pages/detalleRuta.vue') },
-      { path: 'administracion-paradas', name: 'administracion-paradas', component: () => import('pages/administracionParadas.vue') },
       { path: 'administrar-usuario', name: 'administrar-usuario', component: () => import('pages/administrarUsuario.vue') }
     ]
 
@@ -23,7 +22,8 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') },
       { path: 'destinos', name: 'destinos', component: () => import('pages/destinos.vue') },
       { path: 'rutas', name: 'rutas', component: () => import('pages/rutas.vue') },
-      { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') }
+      { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') },
+      { path: 'administracion-paradas', name: 'administracion-paradas', component: () => import('pages/administracionParadas.vue') }
     ]
   },
   // Always leave this as last one,
