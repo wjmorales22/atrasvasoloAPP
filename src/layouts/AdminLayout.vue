@@ -53,30 +53,6 @@
               <q-item-section> Home </q-item-section>
             </q-item>
             <q-separator />
-            <q-item clickable v-ripple to="/destinos">
-              <q-item-section avatar>
-                <q-icon name="explore" />
-              </q-item-section>
-
-              <q-item-section> Destinos </q-item-section>
-            </q-item>
-            <q-separator />
-            <q-item clickable v-ripple to="/paradas">
-              <q-item-section avatar>
-                <q-icon name="fas fa-street-view" />
-              </q-item-section>
-
-              <q-item-section> Paradas </q-item-section>
-            </q-item>
-            <q-separator />
-            <q-item clickable v-ripple to="/rutas">
-              <q-item-section avatar>
-                <q-icon name="directions_bus" />
-              </q-item-section>
-
-              <q-item-section> Rutas </q-item-section>
-            </q-item>
-            <q-separator />
             <br>
             <q-item-label header>Administración</q-item-label>
             <q-item clickable v-ripple to="/admin/rutas">
