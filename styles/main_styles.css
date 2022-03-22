@@ -507,13 +507,15 @@ section
 	font-size: 24px;
 	line-height: 1.5;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #ff5e00;
+	-webkit-text-stroke: 2px rgb(131, 63, 0);
 }
 .item_1 span:first-child
 {
 	font-size: 75px;
 	margin-bottom: 22px;
 }
+
 .item_1 span:nth-child(2)
 {
 	margin-bottom: 11px;
