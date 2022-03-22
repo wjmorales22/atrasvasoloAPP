@@ -1,6 +1,23 @@
 <template>
   <q-page class="row d-flex justify-center">
-    <q-list class="col-12 col-sm-10 col-md-8 col-lg-6">
+    <q-list class="col-12 col-sm-10 col-md-8">
+      <div
+        class="flex justify-between"
+        style="margin-bottom: 2rem;"
+      >
+        <q-item-label  class="text-h6 text-weight-bold text-primary text-uppercase flex items-center">
+          <span>Listado de paradas de bus</span>
+        </q-item-label>
+
+        <q-btn
+          unelevated
+          rounded
+          color="primary"
+          label="Agregar parada"
+          class="text-weight-bold"
+        />
+      </div>
+
       <elementoLista v-for="(parada, index) in paradas" :key="index" :parada="parada" />
     </q-list>
   </q-page>
