@@ -26,6 +26,13 @@ const routes = [
       { path: 'paradas', name: 'paradas', component: () => import('pages/paradas.vue') }
     ]
   },
+  {
+    path: '/admin',
+    component: () => import('layouts/AdminLayout.vue'),
+    children: [
+      { path: '/admin/rutas', component: () => import('pages/administrarRutas.vue') }
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
