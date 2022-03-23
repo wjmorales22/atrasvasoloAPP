@@ -47,7 +47,7 @@
           <q-list padding>
             <q-item
               clickable
-              v-ripple to="/admin/"
+              v-ripple to="/log"
             >
               <q-item-section avatar>
                 <q-icon name="home" />
@@ -55,6 +55,7 @@
 
               <q-item-section>Home</q-item-section>
             </q-item>
+            <q-separator />
 
             <q-item-label
               header
@@ -66,7 +67,7 @@
             <q-item
               clickable
               v-ripple
-              to="/admin/administrar-rutas"
+              to="/admin/rutas"
             >
               <q-item-section avatar>
                 <q-icon name="directions_bus" />
@@ -74,11 +75,12 @@
 
               <q-item-section>Rutas</q-item-section>
             </q-item>
+            <q-separator />
 
             <q-item
               clickable
               v-ripple
-              to="administrar-paradas"
+              to="/admin/paradas"
             >
               <q-item-section avatar>
                 <q-icon name="place" />
@@ -86,11 +88,12 @@
 
               <q-item-section>Paradas</q-item-section>
             </q-item>
+            <q-separator />
 
             <q-item
               clickable
               v-ripple
-              to="administrar-usuarios"
+              to="/admin/usuarios"
             >
               <q-item-section avatar>
                 <q-icon name="people" />
@@ -98,7 +101,7 @@
 
               <q-item-section>Usuarios</q-item-section>
             </q-item>
-
+            <q-separator />
             <q-item-label
               header
               style="margin-top: 1.5rem;"
@@ -117,24 +120,10 @@
 
               <q-item-section>Sitio web</q-item-section>
             </q-item>
+            <q-separator />
           </q-list>
         </q-scroll-area>
-
-        <q-img
-          class="absolute-top"
-          src="https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-3d-stereoscopic-property-technology-image_26567.jpg"
-          style="height: 150px"
-        >
-          <div class="absolute-bottom bg-transparent">
-            <q-avatar size="56px" class="q-mb-sm">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
-            </q-avatar>
-
-            <div class="text-weight-bold">Administrator</div>
-
-            <div>@administrator</div>
-          </div>
-        </q-img>
+        <profileCard></profileCard>
       </q-drawer>
 
       <q-page-container>
@@ -145,7 +134,9 @@
 </template>
 
 <script>
+import profileCard from '../components/profileCard.vue'
 export default {
+  components: { profileCard },
   data: () => ({
     drawer: false,
     text: ''

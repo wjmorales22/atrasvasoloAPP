@@ -11,7 +11,7 @@
             <q-btn
              clickable
               v-ripple
-              to="/admin/add-usuarios"
+              to="/admin/addusuario"
               label="Agregar" name="btnAgregar" color="primary"
               icon="class"
             >

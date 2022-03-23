@@ -38,10 +38,10 @@
         >
         </q-expansion-item>
 
-        <q-expansion-item :content-inset-level="0.5" expand-separator icon="person_pin_circle" label="Paradas" caption="vacio">
+        <q-expansion-item :content-inset-level="0.5" expand-separator icon="directions_bus" label="Paradas" caption="vacio">
 
         </q-expansion-item>
-        <q-expansion-item :content-inset-level="0.5" expand-separator icon="directions_bus" label="Rutas" caption="vacio">
+        <q-expansion-item :content-inset-level="0.5" expand-separator icon="insights" label="Rutas" caption="vacio">
         </q-expansion-item>
       </q-list>
       </div>

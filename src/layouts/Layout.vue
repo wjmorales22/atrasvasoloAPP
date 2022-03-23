@@ -32,18 +32,12 @@
 
       <q-footer bordered>
         <q-tabs align="center" class="q-pa-md">
-        <q-route-tab to="/destinos" label="Destinos" icon="explore"/>
-        <q-route-tab to="/paradas" label="Paradas" icon="directions_bus"/>
-        <q-route-tab to="/rutas" label="Rutas" icon="insights"/>
-      </q-tabs>
+          <q-route-tab to="/log/destinos" label="Destinos" icon="explore"/>
+          <q-route-tab to="/log/paradas" label="Paradas" icon="directions_bus"/>
+          <q-route-tab to="/log/rutas" label="Rutas" icon="insights"/>
+        </q-tabs>
       </q-footer>
-      <q-drawer
-        v-model="drawer"
-        show-if-above
-        :width="200"
-        :breakpoint="400"
-        elevated
-      >
+      <q-drawer v-model="drawer" show-if-above :width="200" :breakpoint="400" elevated>
         <q-scroll-area
           style="
             height: calc(100% - 150px);
@@ -52,66 +46,66 @@
           "
         >
           <q-list padding>
-            <q-item clickable v-ripple to="/">
+            <q-item clickable v-ripple to="/log">
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
 
               <q-item-section> Home </q-item-section>
             </q-item>
-            <q-separator />
+            <q-separator/>
             <br>
             <q-item-label header>Administración</q-item-label>
             <q-item clickable v-ripple to="/admin/rutas">
               <q-item-section avatar>
-                <q-icon name="ion-cog" />
+                <q-icon name="directions_bus" />
               </q-item-section>
 
               <q-item-section>Rutas </q-item-section>
             </q-item>
             <q-separator />
-            <q-item clickable v-ripple to="/layout/administracion-paradas">
+            <q-item clickable v-ripple to="/admin/paradas">
               <q-item-section avatar>
-                <q-icon name="ion-cog" />
+                <q-icon name="place" />
               </q-item-section>
 
               <q-item-section>Paradas </q-item-section>
             </q-item>
             <q-separator />
-            <q-item clickable v-ripple>
+            <q-item
+              clickable
+              v-ripple
+              to="/admin/usuarios"
+            >
               <q-item-section avatar>
-                <q-icon name="ion-cog" />
+                <q-icon name="people" />
               </q-item-section>
 
-              <q-item-section>General</q-item-section>
+              <q-item-section>Usuarios</q-item-section>
             </q-item>
             <q-separator />
-            <br><br>
-            <q-item-label header>Sobre nosotros</q-item-label>
-            <q-item clickable v-ripple href="https://diseno2022.github.io/atrasvasoloAPP/">
+            <q-item-label
+              header
+              style="margin-top: 1.5rem;"
+            >
+              Sobre nosotros
+            </q-item-label>
+
+            <q-item
+              clickable
+              v-ripple
+              href="https://diseno2022.github.io/atrasvasoloAPP/"
+            >
               <q-item-section avatar>
-                <q-icon name="language" />
+                <q-icon name="public" />
               </q-item-section>
 
-              <q-item-section> Sitio </q-item-section>
+              <q-item-section>Sitio web</q-item-section>
             </q-item>
             <q-separator />
           </q-list>
         </q-scroll-area>
-
-        <q-img
-          class="absolute-top"
-          src="https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-3d-stereoscopic-property-technology-image_26567.jpg"
-          style="height: 150px"
-        >
-          <div class="absolute-bottom bg-transparent">
-            <q-avatar size="56px" class="q-mb-sm">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
-            </q-avatar>
-            <div class="text-weight-bold">Administrator</div>
-            <div>@administrator</div>
-          </div>
-        </q-img>
+        <profileCard></profileCard>
       </q-drawer>
 
       <q-page-container>
@@ -122,7 +116,9 @@
 </template>
 
 <script>
+import profileCard from '../components/profileCard.vue'
 export default {
+  components: { profileCard },
   data () {
     return {
       drawer: false,

@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-layout view="lHh Lpr lff">
-      <q-header elevated class="bg-purple-10">
+      <q-header elevated color="primary">
         <!--bg-cyan-10-->
         <q-toolbar>
           <q-toolbar-title>Atras Va Solo App</q-toolbar-title>
@@ -52,14 +52,15 @@
           "
         >
           <q-list>
-            <q-item clickable v-ripple to="/">
+            <q-item clickable v-ripple to="/"
+            >
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
 
-              <q-item-section> Home </q-item-section>
+              <q-item-section>Home</q-item-section>
             </q-item>
-            <br /><br /><br /><br /><br /><br />
+            <q-separator />
             <q-item clickable v-ripple to="/destinos">
               <q-item-section avatar>
                 <q-icon name="explore" />
@@ -67,23 +68,38 @@
 
               <q-item-section> Destinos </q-item-section>
             </q-item>
-            <br />
+            <q-separator />
             <q-item clickable v-ripple to="/paradas">
               <q-item-section avatar>
-                <q-icon name="fas fa-street-view" />
+                <q-icon name="directions_bus" />
               </q-item-section>
-
+            <q-separator />
               <q-item-section> Paradas </q-item-section>
             </q-item>
-            <br />
+            <q-separator />
             <q-item clickable v-ripple to="/rutas">
               <q-item-section avatar>
-                <q-icon name="directions_bus" />
+                <q-icon name="insights" />
               </q-item-section>
 
               <q-item-section> Rutas </q-item-section>
             </q-item>
-            <br />
+            <q-separator />
+            <q-item clickable v-ripple to="/log">
+              <q-item-section avatar>
+                <q-icon name="person" />
+              </q-item-section>
+
+              <q-item-section> Iniciar Sesion </q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item-label
+              header
+              style="margin-top: 1.5rem;"
+            >
+              Sobre nosotros
+            </q-item-label>
+
             <q-item
               clickable
               v-ripple
@@ -94,14 +110,6 @@
               </q-item-section>
 
               <q-item-section> Sitio </q-item-section>
-            </q-item>
-            <br /><br /><br /><br /><br /><br />
-            <q-item clickable v-ripple to="/admin">
-              <q-item-section avatar>
-                <q-icon name="person" />
-              </q-item-section>
-
-              <q-item-section> Iniciar Sesion </q-item-section>
             </q-item>
           </q-list>
         </q-scroll-area>
