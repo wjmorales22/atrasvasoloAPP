@@ -853,6 +853,7 @@ section
 {
 	width: 263px;
 	height: 263px;
+	object-fit: contain;
 }
 .team_member_image img
 {
