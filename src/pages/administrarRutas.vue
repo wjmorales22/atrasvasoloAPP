@@ -1,12 +1,21 @@
 <template>
     <div class="q-pa-md">
-    <q-list  v-for="ruta in listadoRutas"
+      <div class="buttom">
+        <strong>Agregar </strong>
+        <q-btn position="right" fab icon="add" color="accent"/>
+      </div>
+    <q-list class="list" v-for="ruta in listadoRutas"
     :key="ruta.ruta">
 
       <itemRuta :nameRuta=ruta.ruta :trayectoria=ruta.trayectoria></itemRuta>
       <q-separator spaced inset="item" />
 
     </q-list>
+        <div class="row" style="margin-top: 15px">
+            <div class="col-12">
+                <q-img src="https://pbs.twimg.com/media/CS_wEu3WwAETIjP.png" :ratio="200 / 20" />
+            </div>
+        </div>
   </div>
 </template>
 
@@ -47,6 +56,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+ .buttom {
+   float: right;
+   margin-bottom: 15px;
+ }
 
-</style>
+ .buttom strong {
+   margin-right: 5px;
+   font-size: 15px;
+ }
+ .list {
+   clear: right;
+ }
+</style>>
