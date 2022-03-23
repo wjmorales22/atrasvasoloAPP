@@ -8,7 +8,14 @@
         </div>
         <div class="col-2">
           <div class="col" text-xs-right>
-            <q-btn color="primary" icon="class" label="Agregar" />
+            <q-btn
+             clickable
+              v-ripple
+              to="/admin/add-usuarios"
+              label="Agregar" name="btnAgregar" color="primary"
+              icon="class"
+            >
+            </q-btn>
           </div>
         </div>
       </div>
@@ -122,7 +129,7 @@
 
     <q-intersection>
       <q-item>
-    <!-- Titulo "Usuarios públicos" + buscador -->
+        <!-- Titulo "Usuarios públicos" + buscador -->
         <q-item-section avatar>
           <q-icon name="manage_accounts" color="black" />
         </q-item-section>
@@ -149,7 +156,7 @@
       </q-item>
     </q-intersection>
 
-<!-- Nombre de usuarios colaboradores + opciones "borrar" "editar" -->
+    <!-- Nombre de usuarios colaboradores + opciones "borrar" "editar" -->
     <div class="q-pa-md">
       <q-intersection>
         <q-item clickable v-ripple to="#">
