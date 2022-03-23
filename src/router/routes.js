@@ -21,7 +21,8 @@ const routes = [
       { path: '/', name: 'Home', component: () => import('pages/Index.vue') },
       { path: 'administrar-paradas', name: 'dministrar-paradas', component: () => import('pages/administrarParadas.vue') },
       { path: 'administrar-rutas', name: 'dministrar-ruta', component: () => import('pages/administrarRutas.vue') },
-      { path: 'administrar-usuarios', name: 'dministrar-usuarios', component: () => import('pages/administrarUsuarios.vue') }
+      { path: 'administrar-usuarios', name: 'dministrar-usuarios', component: () => import('pages/administrarUsuarios.vue') },
+      { path: 'add-usuarios', name: 'dd-usuarios', component: () => import('pages/addUsuarios.vue') }
     ]
   },
   // Always leave this as last one,
