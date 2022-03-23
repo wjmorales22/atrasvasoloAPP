@@ -272,7 +272,7 @@ button {
   -webkit-transition: all .3s;
   transition: all .3s;
   -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
+  transform: rotate(50deg);
 }
 
 .e-nav__link:after {
@@ -481,10 +481,11 @@ button {
   }
 }
 @media (max-width: 750px) {
-  body, html, {
+  body, html {
     max-height: 100vh;
   }
-   .error__content {
+  
+  .error__content {
     position: static;
     margin: 0 auto;
     transform: none;
