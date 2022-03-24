@@ -21,7 +21,8 @@ const routes = [
       { path: '/admin/paradas', name: 'admin-paradas', component: () => import('pages/administrarParadas.vue') },
       { path: '/admin/rutas', name: 'admin-ruta', component: () => import('pages/administrarRutas.vue') },
       { path: '/admin/usuarios', name: 'admin-usuarios', component: () => import('pages/administrarUsuarios.vue') },
-      { path: '/admin/addusuario', name: 'admin-addusuario', component: () => import('pages/addUsuarios.vue') }
+      { path: '/admin/addusuario', name: 'admin-addusuario', component: () => import('pages/addUsuarios.vue') },
+      { path: '/admin/addruta', name: 'admin-addruta', component: () => import('pages/addRutas.vue') }
     ]
   },
   {

@@ -2,7 +2,7 @@
     <div class="q-pa-md">
       <div class="buttom">
         <strong>Agregar </strong>
-        <q-btn position="right" fab icon="add" color="accent"/>
+        <q-btn position="right" fab icon="add" color="accent" to="/admin/addruta"/>
       </div>
     <q-list class="list" v-for="ruta in listadoRutas"
     :key="ruta.ruta">
